@@ -12,9 +12,6 @@ categories:
 - Automação de Tarefas
 permalink: /automatize-tarefas-com-gulp/
 ---
-
-Fala galera, faz um bom tempo que não posto nada aqui, e para compensar isso, hoje começarei uma nova série: **Automação de Tarefas**. Nesse primeiro post, falarei sobre o Gulp, meu automatizador de tarefas preferido.
-
 Automatizadores de tarefas são ferramentas que ajudam nós, desenvolvedores, a realizar tarefas repetitivas, tais como: minificação de arquivos, concatenação, testes, entre outras coisas essenciais para o desenvolvimento de um código bom e rápido.
 
 Agora que você já sabe para que um automatizador de tarefas serve, vamos botar a mão na massa!
