@@ -1,4 +1,4 @@
-# [brunoxavierweb.github.io](http://brunoxavierweb.github.io)
+# [brunoxavierweb.github.io/blog](http://brunoxavierweb.github.io/blog)
 Blog Creattive Web
 
 Artigos e dicas sobre Desenvolvimento Web, com foco em Front End e estrategias de Marketing.
