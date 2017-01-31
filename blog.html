@@ -1,0 +1,30 @@
+---
+layout: page
+title: Blog
+description: Blog sobre assuntos relacionados à Desenvolvimento Web, com foco em Front End
+permalink: /blog/
+---
+
+<section class="blog">
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li class="post-container">
+        <span class="post-date">{{ post.date | date: "%-d %b, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.permalink | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+
+          <p class="post-description">{{ post.description }}</p>
+
+          <a href="{{ post.permalink | prepend: site.baseurl }}"> Leia mais sobre {{ post.title }}</a>
+
+          {% include tags.html %}
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">Inscreva-se <a aria-label="Inscreva-se via RSS e receba todos os posts novos" href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a> e receba todos os novos posts</p>
+
+</section>

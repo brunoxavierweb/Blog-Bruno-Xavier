@@ -1,0 +1,26 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400');
+
+$fonte-padrao: 'Open Sans', Arial, sans-serif;
+$preto: #92c14d;
+$branco: #FFFFFF;
+$cinza-claro: darken($branco, 3%);
+$azul: #2d2d2d;
+
+$bp-tablet-large: 800px;
+$bp-mobile-large: 500px;
+
+%margins {margin: 1em 0;}
+
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+@import
+    "base",
+    "layout",
+    "syntax-highlighting",
+    "responsive"
+;

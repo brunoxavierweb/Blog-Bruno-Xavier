@@ -1,0 +1,30 @@
+{
+  "name": "creattive_web_blog",
+  "description": "Artigos e dicas sobre Desenvolvimento Web, com foco em Front End e estrategias de Marketing.",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "blog",
+    "dicas desenvolvimento",
+    "frontend",
+    "tutorial",
+    "developer",
+    "development"
+  ],
+  "authors": [
+    "Bruno Xavier (Creattive Web) <contato@creattiveweb.com.br>"
+  ],
+  "license": "MIT",
+  "homepage": "http://brunoxavierweb.github.io",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "latest",
+    "simple-jekyll-search": "latest"
+  }
+}

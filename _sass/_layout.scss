@@ -1,0 +1,366 @@
+.header {
+    a {
+        text-decoration: none;
+    }
+}
+
+.footer {
+    color: $branco;
+
+    p {
+        margin: 0;
+    }
+}
+
+.header, .footer {
+    padding: 15px;
+    background: $preto;
+    text-align: center;
+}
+
+.title, .social-icons {
+    clear: both;
+}
+
+/*-------------------
+---- Título Site ----
+-------------------*/
+.title {
+    padding: 20px 0;
+
+    h1 {
+      margin-bottom: 5px;
+    }
+
+    h1 a {
+        font-size: 32pt;
+        color: $branco;
+        text-transform: uppercase;
+    }
+
+    h2 a {
+        font-size: 19pt;
+        font-weight: 300;
+        color: $azul;
+    }
+}
+
+/*------------
+---- Menu ----
+------------*/
+.bt-menu {
+    display: none;
+    float: left;
+}
+
+.menu {
+    a {
+        float: left;
+        margin: 0 10px;
+        font-size: 16pt;
+        font-weight: 300;
+        color: $branco;
+
+        &:last-child {
+            margin-right: none;
+        }
+
+        &:hover {
+            color: $azul;
+        }
+    }
+}
+
+/*----------------
+---- Pesquisa ----
+----------------*/
+.bt-search {
+    float: right;
+}
+
+#search-container {
+    display: none;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    input[type=text]{
+        width: 400px;
+        height: 30px;
+        margin: 10px auto;
+        background: transparent;
+        border: 0;
+        border-bottom: 1px solid $branco;
+        outline: 0;
+        text-align: center;
+        font-size: 16pt;
+        color: $branco;
+    }
+
+    ::-webkit-input-placeholder{
+        color: $branco;
+    }
+
+    :-ms-input-placeholder {
+        color: $branco;
+    }
+
+    ::-ms-input-placeholder {
+        color: $branco;
+    }
+
+    ::-moz-placeholder {
+        color: $branco;
+    }
+
+    a, p {
+        display: block;
+        margin: 10px;
+        color: $branco;
+    }
+
+    a:hover {
+      color: $azul;
+      text-decoration: underline;
+    }
+}
+
+/*----------------------
+---- Ícones Sociais ----
+----------------------*/
+.icon-top {
+    width: 25px;
+    height: 25px;
+    fill: $branco;
+    cursor: pointer;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  display: inline-block;
+  fill: $azul;
+
+  &:hover {
+    fill: $branco;
+  }
+}
+
+/*----------------------
+---- Página Inicial ----
+----------------------*/
+.welcome-title {
+    font-size: 16pt;
+    line-height: 20pt;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+/*---------------------
+---- Página | Post ----
+---------------------*/
+.page-content {
+    display: block;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 35px 30px;
+}
+
+.post-content {
+    h2, h3, h4, h5, h6 {
+        margin: 20px 0;
+    }
+}
+
+.post-list {
+    list-style: none;
+}
+
+.post-container {
+    padding: 15px;
+    border-bottom: 1px solid $preto;
+    @extend %margins;
+}
+
+.page-title,
+.post-title {
+  border-bottom: 1px solid $preto;
+  padding: 5px 0;
+}
+
+.post-date {
+  font-size: 11pt;
+  line-height: 16pt;
+}
+
+.post-link {
+  text-decoration: none;
+  font-size: 18pt;
+  line-height: 22pt;
+}
+
+.tags {
+  margin-top: 1em;
+
+  a {
+    text-decoration: none;
+    border: 1px solid $azul;
+    border-radius: 3px;
+    padding: 5px;
+    margin: 5px 0;
+    display: inline-block;
+
+    &:hover {
+      background: $azul;
+      color: white;
+    }
+  }
+}
+
+/*--------------------
+---- Página Sobre ----
+--------------------*/
+.competencias {
+    list-style: disc;
+    padding-left: 20px;
+
+    li {
+        padding: 5px 0;
+    }
+}
+
+/*-----------------------------
+---- Páginas Tags e Séries ----
+-----------------------------*/
+.tags-list, .categories-list, .tag, .category {
+    @extend %margins;
+}
+
+.tags-list, .categories-list {
+    @extend .tags;
+}
+
+.posts {
+    list-style: none;
+    padding: 5px;
+
+    a {
+        display: block;
+        padding: 5px 0;
+        text-decoration: none;
+        border-bottom: 1px solid $azul;
+
+        &:hover {
+            border-bottom-color: darken($azul, 15%);
+        }
+    }
+
+    .date {
+        float: right;
+    }
+}
+
+.serie-item {
+    font-size: 16pt;
+    line-height: 20pt;
+}
+
+/*-------------
+---- Autor ----
+-------------*/
+.img-author {
+  width: 150px;
+  height: 150px;
+  float: left;
+  margin-right: 20px;
+  border-radius: 100%;
+  border: 3px solid $azul;
+}
+
+.author {
+  background: $cinza-claro;
+  padding: 15px;
+  @extend %margins;
+
+  .details {
+    @extend %margins;
+  }
+
+  .name a {
+    font-size: 18pt;
+    text-decoration: none;
+  }
+}
+
+/*------------------------------------------------
+---- Botões de Compartilhamento | Comentários ----
+------------------------------------------------*/
+.share, .comments {
+  text-align: center;
+  border-top: 1px solid $preto;
+  padding: 10px;
+
+  h2, h3 {
+    margin: 5px auto;
+  }
+}
+
+.share {
+  a {
+    text-decoration: none;
+  }
+
+  .icon {
+    margin-top: 10px;
+
+    &:hover {
+      fill: darken($azul, 15%);
+    }
+  }
+}
+
+/*-----------------
+---- Portfólio ----
+-----------------*/
+.job-container {
+  display: table;
+}
+
+.job-item {
+  display: inline-block;
+  width: 31.5%;
+  margin: 10px 0;
+
+  & + & {
+    margin-left: 1.6%;
+  }
+
+  h2, p {
+    padding: 0 5px;
+    color: $preto;
+  }
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      h2, p {
+       color: $azul;
+      }
+    }
+  }
+
+}
+
+.job-img {
+  display: block;
+  width: 100%;
+  height: 200px;
+}

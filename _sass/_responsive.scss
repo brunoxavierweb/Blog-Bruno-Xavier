@@ -1,0 +1,82 @@
+@include media-query($bp-tablet-large) {
+
+		.bt-menu {
+		display: block;
+	}
+
+    .menu {
+    	display: none;
+    	clear: both;
+
+    	a {
+        	float: none;
+        	display: block;
+        	margin: 0;
+        	padding: 10px;
+        	border-bottom: 1px solid $branco;
+
+        	&:last-child {
+            	border-bottom: none;
+        	}
+    	}
+	}
+
+	.job-item {
+		width: 47%;
+		margin: 1%;
+	}
+}
+
+@include media-query($bp-mobile-large) {
+	/*-------------------
+	---- Título Site ----
+	-------------------*/
+	.title {
+    	h1 a {
+        	font-size: 24pt;
+        	text-transform: capitalize;
+    	}
+
+    	h2 a {
+        	font-size: 16pt;
+    	}
+	}
+
+	/*---------------------
+	---- Página | Post ----
+	---------------------*/
+	.page-content {
+  		padding: 25px 20px;
+	}
+
+
+	.post-list, .post-container {
+  		padding: 0;
+	}
+
+	/*----------------
+	---- Pesquisa ----
+	----------------*/
+	#search-container {
+
+  		input[type=text]{
+    		width: 80%;
+  		}
+	}
+
+	/*-------------
+	---- Autor ----
+	-------------*/
+	.author {
+		text-align: center;
+
+		.email {
+			font-size: 12pt;
+		}
+	}
+
+	.img-author {
+		float: none;
+		display: block;
+		margin: 0 auto;
+	}

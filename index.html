@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <p class="welcome-title"> Creattive Web - Blog </p>
+
+  <ul class="post-list">
+    {% for post in site.posts limit:2 %}
+      <li class="post-container">
+        <span class="post-date">{{ post.date | date: "%-d %b, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.permalink | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+
+          <p class="post-description">{{ post.description }}</p>
+
+          <a href="{{ post.permalink | prepend: site.baseurl }}"> Leia mais sobre {{ post.title }}</a>
+
+          {% include tags.html %}
+      </li>
+    {% endfor %}
+  </ul>
+
+  <a href="blog"> Veja mais no blog... </a>
+
+</div>
