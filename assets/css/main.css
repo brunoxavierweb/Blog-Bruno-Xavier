@@ -1,0 +1,621 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400");
+p, .post-container, .tags-list, .categories-list, .tag, .category, .author, .author .details {
+  margin: 1em 0; }
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+button {
+  padding: 0;
+  background: none;
+  border: 0;
+  overflow: visible; }
+
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #92c14d; }
+
+h1 {
+  font-size: 24pt;
+  line-height: 28pt; }
+
+h2 {
+  font-size: 20pt;
+  line-height: 24pt; }
+
+h3 {
+  font-size: 16pt;
+  line-height: 20pt; }
+
+h4 {
+  font-size: 14pt;
+  line-height: 16pt; }
+
+h5 {
+  font-size: 12pt;
+  line-height: 14pt; }
+
+h6 {
+  font-size: 10pt;
+  line-height: 12pt; }
+
+p, a, li {
+  font-size: 14pt;
+  line-height: 18pt; }
+
+h4, h5, h6 {
+  text-transform: uppercase; }
+
+/*-------------
+---- Links ----
+-------------*/
+a {
+  color: #2d2d2d; }
+  a:hover {
+    color: #070707; }
+
+/*--------------
+---- Listas ----
+--------------*/
+ul {
+  list-style: disc; }
+
+ul, ol {
+  padding-left: 20px; }
+  ul li, ol li {
+    padding: 5px 0; }
+
+/*---------------
+---- Imagens ----
+---------------*/
+img {
+  max-width: 100%;
+  vertical-align: middle; }
+
+figure > img {
+  display: block; }
+
+.center {
+  display: block;
+  margin: 0 auto; }
+
+.right {
+  float: right; }
+
+.left {
+  float: left; }
+
+/*-------------------
+---- Blockquotes ----
+-------------------*/
+blockquote {
+  border-left: 4px solid #2d2d2d;
+  font-size: 16pt;
+  letter-spacing: -1px;
+  font-style: italic;
+  padding-left: 10px; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+.header a {
+  text-decoration: none; }
+
+.footer {
+  color: #FFFFFF; }
+  .footer p {
+    margin: 0; }
+
+.header, .footer {
+  padding: 15px;
+  background: #92c14d;
+  text-align: center; }
+
+.title, .social-icons {
+  clear: both; }
+
+/*-------------------
+---- Título Site ----
+-------------------*/
+.title {
+  padding: 20px 0; }
+  .title h1 {
+    margin-bottom: 5px; }
+  .title h1 a {
+    font-size: 32pt;
+    color: #FFFFFF;
+    text-transform: uppercase; }
+  .title h2 a {
+    font-size: 19pt;
+    font-weight: 300;
+    color: #2d2d2d; }
+
+/*------------
+---- Menu ----
+------------*/
+.bt-menu {
+  display: none;
+  float: left; }
+
+.menu a {
+  float: left;
+  margin: 0 10px;
+  font-size: 16pt;
+  font-weight: 300;
+  color: #FFFFFF; }
+  .menu a:last-child {
+    margin-right: none; }
+  .menu a:hover {
+    color: #2d2d2d; }
+
+/*----------------
+---- Pesquisa ----
+----------------*/
+.bt-search {
+  float: right; }
+
+#search-container {
+  display: none;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.8); }
+  #search-container input[type=text] {
+    width: 400px;
+    height: 30px;
+    margin: 10px auto;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #FFFFFF;
+    outline: 0;
+    text-align: center;
+    font-size: 16pt;
+    color: #FFFFFF; }
+  #search-container ::-webkit-input-placeholder {
+    color: #FFFFFF; }
+  #search-container :-ms-input-placeholder {
+    color: #FFFFFF; }
+  #search-container ::-ms-input-placeholder {
+    color: #FFFFFF; }
+  #search-container ::-moz-placeholder {
+    color: #FFFFFF; }
+  #search-container a, #search-container p {
+    display: block;
+    margin: 10px;
+    color: #FFFFFF; }
+  #search-container a:hover {
+    color: #2d2d2d;
+    text-decoration: underline; }
+
+/*----------------------
+---- Ícones Sociais ----
+----------------------*/
+.icon-top {
+  width: 25px;
+  height: 25px;
+  fill: #FFFFFF;
+  cursor: pointer; }
+
+.icon {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  display: inline-block;
+  fill: #2d2d2d; }
+  .icon:hover {
+    fill: #FFFFFF; }
+
+/*----------------------
+---- Página Inicial ----
+----------------------*/
+.welcome-title {
+  font-size: 16pt;
+  line-height: 20pt;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top: 0; }
+
+/*---------------------
+---- Página | Post ----
+---------------------*/
+.page-content {
+  display: block;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 35px 30px; }
+
+.post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6 {
+  margin: 20px 0; }
+
+.post-list {
+  list-style: none; }
+
+.post-container {
+  padding: 15px;
+  border-bottom: 1px solid #92c14d; }
+
+.page-title,
+.post-title {
+  border-bottom: 1px solid #92c14d;
+  padding: 5px 0; }
+
+.post-date {
+  font-size: 11pt;
+  line-height: 16pt; }
+
+.post-link {
+  text-decoration: none;
+  font-size: 18pt;
+  line-height: 22pt; }
+
+.tags, .tags-list, .categories-list {
+  margin-top: 1em; }
+  .tags a, .tags-list a, .categories-list a {
+    text-decoration: none;
+    border: 1px solid #2d2d2d;
+    border-radius: 3px;
+    padding: 5px;
+    margin: 5px 0;
+    display: inline-block; }
+    .tags a:hover, .tags-list a:hover, .categories-list a:hover {
+      background: #2d2d2d;
+      color: white; }
+
+/*--------------------
+---- Página Sobre ----
+--------------------*/
+.competencias {
+  list-style: disc;
+  padding-left: 20px; }
+  .competencias li {
+    padding: 5px 0; }
+
+/*-----------------------------
+---- Páginas Tags e Séries ----
+-----------------------------*/
+.posts {
+  list-style: none;
+  padding: 5px; }
+  .posts a {
+    display: block;
+    padding: 5px 0;
+    text-decoration: none;
+    border-bottom: 1px solid #2d2d2d; }
+    .posts a:hover {
+      border-bottom-color: #070707; }
+  .posts .date {
+    float: right; }
+
+.serie-item {
+  font-size: 16pt;
+  line-height: 20pt; }
+
+/*-------------
+---- Autor ----
+-------------*/
+.img-author {
+  width: 150px;
+  height: 150px;
+  float: left;
+  margin-right: 20px;
+  border-radius: 100%;
+  border: 3px solid #2d2d2d; }
+
+.author {
+  background: #f7f7f7;
+  padding: 15px; }
+  .author .name a {
+    font-size: 18pt;
+    text-decoration: none; }
+
+/*------------------------------------------------
+---- Botões de Compartilhamento | Comentários ----
+------------------------------------------------*/
+.share, .comments {
+  text-align: center;
+  border-top: 1px solid #92c14d;
+  padding: 10px; }
+  .share h2, .share h3, .comments h2, .comments h3 {
+    margin: 5px auto; }
+
+.share a {
+  text-decoration: none; }
+
+.share .icon {
+  margin-top: 10px; }
+  .share .icon:hover {
+    fill: #070707; }
+
+/*-----------------
+---- Portfólio ----
+-----------------*/
+.job-container {
+  display: table; }
+
+.job-item {
+  display: inline-block;
+  width: 31.5%;
+  margin: 10px 0; }
+  .job-item + .job-item {
+    margin-left: 1.6%; }
+  .job-item h2, .job-item p {
+    padding: 0 5px;
+    color: #92c14d; }
+  .job-item a {
+    text-decoration: none; }
+    .job-item a:hover h2, .job-item a:hover p {
+      color: #2d2d2d; }
+
+.job-img {
+  display: block;
+  width: 100%;
+  height: 200px; }
+
+pre,
+code {
+  font-size: 15px;
+  border: 1px solid #2d2d2d;
+  border-radius: 3px;
+  background: #272822; }
+
+code {
+  padding: 1px 5px;
+  color: #FFFFFF; }
+
+pre {
+  padding: 8px 12px;
+  overflow-x: auto; }
+  pre > code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0; }
+
+/**
+ * Syntax highlighting styles
+ */
+.highlight {
+  background: #272822;
+  /* Comment */
+  /* Error */
+  /* Keyword */
+  /* Literal */
+  /* Name */
+  /* Operator */
+  /* Punctuation */
+  /* Comment.Multiline */
+  /* Comment.Preproc */
+  /* Comment.Single */
+  /* Comment.Special */
+  /* Generic.Emph */
+  /* Generic.Strong */
+  /* Keyword.Constant */
+  /* Keyword.Declaration */
+  /* Keyword.Namespace */
+  /* Keyword.Pseudo */
+  /* Keyword.Reserved */
+  /* Keyword.Type */
+  /* Literal.Date */
+  /* Literal.Number */
+  /* Literal.String */
+  /* Name.Attribute */
+  /* Name.Builtin */
+  /* Name.Class */
+  /* Name.Constant */
+  /* Name.Decorator */
+  /* Name.Entity */
+  /* Name.Exception */
+  /* Name.Function */
+  /* Name.Label */
+  /* Name.Namespace */
+  /* Name.Other */
+  /* Name.Property */
+  /* Name.Tag */
+  /* Name.Variable */
+  /* Operator.Word */
+  /* Text.Whitespace */
+  /* Literal.Number.Float */
+  /* Literal.Number.Hex */
+  /* Literal.Number.Integer */
+  /* Literal.Number.Oct */
+  /* Literal.String.Backtick */
+  /* Literal.String.Char */
+  /* Literal.String.Doc */
+  /* Literal.String.Double */
+  /* Literal.String.Escape */
+  /* Literal.String.Heredoc */
+  /* Literal.String.Interpol */
+  /* Literal.String.Other */
+  /* Literal.String.Regex */
+  /* Literal.String.Single */
+  /* Literal.String.Symbol */
+  /* Name.Builtin.Pseudo */
+  /* Name.Variable.Class */
+  /* Name.Variable.Global */
+  /* Name.Variable.Instance */
+  /* Literal.Number.Integer.Long */
+  /* Generic Heading & Diff Header */
+  /* Generic.Subheading & Diff Unified/Comment? */
+  /* Generic.Deleted & Diff Deleted */
+  /* Generic.Inserted & Diff Inserted */ }
+  .highlighter-rouge .highlight {
+    background: #272822; }
+  .highlight .c {
+    color: #75715e; }
+  .highlight .err {
+    color: #960050;
+    background-color: #1e0010; }
+  .highlight .k {
+    color: #66d9ef; }
+  .highlight .l {
+    color: #ae81ff; }
+  .highlight .n {
+    color: #f8f8f2; }
+  .highlight .o {
+    color: #f92672; }
+  .highlight .p {
+    color: #f8f8f2; }
+  .highlight .cm {
+    color: #75715e; }
+  .highlight .cp {
+    color: #75715e; }
+  .highlight .c1 {
+    color: #75715e; }
+  .highlight .cs {
+    color: #75715e; }
+  .highlight .ge {
+    font-style: italic; }
+  .highlight .gs {
+    font-weight: bold; }
+  .highlight .kc {
+    color: #66d9ef; }
+  .highlight .kd {
+    color: #66d9ef; }
+  .highlight .kn {
+    color: #f92672; }
+  .highlight .kp {
+    color: #66d9ef; }
+  .highlight .kr {
+    color: #66d9ef; }
+  .highlight .kt {
+    color: #66d9ef; }
+  .highlight .ld {
+    color: #e6db74; }
+  .highlight .m {
+    color: #ae81ff; }
+  .highlight .s {
+    color: #e6db74; }
+  .highlight .na {
+    color: #a6e22e; }
+  .highlight .nb {
+    color: #f8f8f2; }
+  .highlight .nc {
+    color: #a6e22e; }
+  .highlight .no {
+    color: #66d9ef; }
+  .highlight .nd {
+    color: #a6e22e; }
+  .highlight .ni {
+    color: #f8f8f2; }
+  .highlight .ne {
+    color: #a6e22e; }
+  .highlight .nf {
+    color: #a6e22e; }
+  .highlight .nl {
+    color: #f8f8f2; }
+  .highlight .nn {
+    color: #f8f8f2; }
+  .highlight .nx {
+    color: #a6e22e; }
+  .highlight .py {
+    color: #f8f8f2; }
+  .highlight .nt {
+    color: #f92672; }
+  .highlight .nv {
+    color: #f8f8f2; }
+  .highlight .ow {
+    color: #f92672; }
+  .highlight .w {
+    color: #f8f8f2; }
+  .highlight .mf {
+    color: #ae81ff; }
+  .highlight .mh {
+    color: #ae81ff; }
+  .highlight .mi {
+    color: #ae81ff; }
+  .highlight .mo {
+    color: #ae81ff; }
+  .highlight .sb {
+    color: #e6db74; }
+  .highlight .sc {
+    color: #e6db74; }
+  .highlight .sd {
+    color: #e6db74; }
+  .highlight .s2 {
+    color: #e6db74; }
+  .highlight .se {
+    color: #ae81ff; }
+  .highlight .sh {
+    color: #e6db74; }
+  .highlight .si {
+    color: #e6db74; }
+  .highlight .sx {
+    color: #e6db74; }
+  .highlight .sr {
+    color: #e6db74; }
+  .highlight .s1 {
+    color: #e6db74; }
+  .highlight .ss {
+    color: #e6db74; }
+  .highlight .bp {
+    color: #f8f8f2; }
+  .highlight .vc {
+    color: #f8f8f2; }
+  .highlight .vg {
+    color: #f8f8f2; }
+  .highlight .vi {
+    color: #f8f8f2; }
+  .highlight .il {
+    color: #ae81ff; }
+  .highlight .gu {
+    color: #75715e; }
+  .highlight .gd {
+    color: #f92672; }
+  .highlight .gi {
+    color: #a6e22e; }
+
+@media screen and (max-width: 800px) {
+  .bt-menu {
+    display: block; }
+  .menu {
+    display: none;
+    clear: both; }
+    .menu a {
+      float: none;
+      display: block;
+      margin: 0;
+      padding: 10px;
+      border-bottom: 1px solid #FFFFFF; }
+      .menu a:last-child {
+        border-bottom: none; }
+  .job-item {
+    width: 47%;
+    margin: 1%; } }
+
+@media screen and (max-width: 500px) {
+  /*-------------------
+	---- Título Site ----
+	-------------------*/
+  .title h1 a {
+    font-size: 24pt;
+    text-transform: capitalize; }
+  .title h2 a {
+    font-size: 16pt; }
+  /*---------------------
+	---- Página | Post ----
+	---------------------*/
+  .page-content {
+    padding: 25px 20px; }
+  .post-list, .post-container {
+    padding: 0; }
+  /*----------------
+	---- Pesquisa ----
+	----------------*/
+  #search-container input[type=text] {
+    width: 80%; }
+  /*-------------
+	---- Autor ----
+	-------------*/
+  .author {
+    text-align: center; }
+    .author .email {
+      font-size: 12pt; }
+  .img-author {
+    float: none;
+    display: block;
+    margin: 0 auto; } }
