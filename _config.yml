@@ -16,5 +16,3 @@ js_folder:  "/assets/js"
 img_folder:  "/assets/img"
 sass:
     style: compressed
-
-theme: jekyll-theme-cayman
