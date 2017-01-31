@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Automatize tarefas com Gulp"
-date: 2017-01-27 15:56:00 -0300
+date: 2017-01-31 14:06:00 -0300
 author: Bruno Xavier
 description: Aprenda a usar o Gulp para automatizar suas tarefas.
 tags:
@@ -10,7 +10,7 @@ tags:
 - automatizadores
 categories:
 - Automação de Tarefas
-permalink: /automatize-suas-tarefas-com-gulp/
+permalink: /automatize-tarefas-com-gulp/
 ---
 
 Fala galera, faz um bom tempo que não posto nada aqui, e para compensar isso, hoje começarei uma nova série: **Automação de Tarefas**. Nesse primeiro post, falarei sobre o Gulp, meu automatizador de tarefas preferido.

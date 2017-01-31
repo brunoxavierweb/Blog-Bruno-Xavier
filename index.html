@@ -17,7 +17,7 @@ layout: default
 
           <p class="post-description">{{ post.description }}</p>
 
-          <a href="{{ post.permalink | prepend: site.baseurl }}"> Leia mais sobre {{ post.title }}</a>
+          <a href="{{ post.permalink | prepend: site.baseurl }}">&#10151; Leia mais sobre +</a>
 
           {% include tags.html %}
       </li>
