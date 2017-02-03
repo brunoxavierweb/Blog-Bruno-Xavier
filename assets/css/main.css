@@ -107,13 +107,18 @@ blockquote {
   .footer p {
     margin: 0; }
 
-.header, .footer {
+.header {
   padding: 15px;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#92c14d+0,97bf5b+50,ffffff+100&1+0,0.5+85 */
 background: -moz-linear-gradient(top, rgba(146,193,77,1) 0%, rgba(151,191,91,0.71) 50%, rgba(224,236,206,0.5) 85%, rgba(255,255,255,0.5) 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(top, rgba(146,193,77,1) 0%,rgba(151,191,91,0.71) 50%,rgba(224,236,206,0.5) 85%,rgba(255,255,255,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(to bottom, rgba(146,193,77,1) 0%,rgba(151,191,91,0.71) 50%,rgba(224,236,206,0.5) 85%,rgba(255,255,255,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#92c14d', endColorstr='#80ffffff',GradientType=0 );
+  text-align: center; }
+
+.footer {
+  padding: 15px;
+  background:#92C14D;
   text-align: center; }
 
 .title, .social-icons {
@@ -255,7 +260,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#92c14d', end
 .post-link {
   text-decoration: none;
   font-size: 18pt;
-  line-height: 22pt; }
+  line-height: 22pt;
+	color: #9fc763;}
 
 .tags, .tags-list, .categories-list {
   margin-top: 1em; }
