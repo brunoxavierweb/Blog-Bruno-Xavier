@@ -12,7 +12,7 @@ gems:
   - jekyll-sitemap
 
 css_folder:  "/assets/css"
-js_folder:  "/assets/js"
+js_folder:  "blog/assets/js"
 img_folder:  "/assets/img"
 sass:
     style: compressed
