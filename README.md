@@ -1,4 +1,4 @@
-# [brunoxavierweb.github.io/blog](http://brunoxavierweb.github.io/blog)
+# [https://brunoxavierweb.github.io/Blog-Bruno-Xavier/automatize-tarefas-com-gulp/](https://brunoxavierweb.github.io/Blog-Bruno-Xavier/automatize-tarefas-com-gulp/)
 Blog Creattive Web
 
 Artigos e dicas sobre Desenvolvimento Web, com foco em Front End e estrategias de Marketing.
